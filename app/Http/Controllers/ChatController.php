@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Http;
 class ChatController extends Controller
 {
     public function send(Request $request)
-    {
+    {// Validate request
         $request->validate([
             'device_id' => 'required|string',
             'message' => 'required|string',
